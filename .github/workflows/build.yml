@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
-
+  workflow_dispatch: # allow to trigger the workflow manually. Useful for test purpose
 jobs:
   build:
     name: Build
